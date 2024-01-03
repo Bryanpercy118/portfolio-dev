@@ -3,36 +3,39 @@ import Button from "./Button.astro";
 ---
 
 <header>
-    <section class="py-10 md:py-16">
+    <section class="py-6 md:py-16">
 
-        <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="container mx-auto px-4">
 
-            
-           
-            <nav class="flex items-center justify-between mb-40">
-                <Button/> 
+            <nav class="flex items-center justify-between mb-4">
+              <Button/>
             </nav>
 
             <div class="text-center">
-                <div class="flex justify-center mb-16">
-                    <img 
-                    class="rounded-full w-30 h-30" 
-                    src=" https://avatars.githubusercontent.com/bryanpercy118" 
-                    alt="Image"
-                    >
+
+                <div class="flex justify-center mb-4 md:mb-8">
+                    <img class="rounded-full w-13 h-13 md:w-30 md:h-30"
+                        src="https://avatars.githubusercontent.com/bryanpercy118" alt="Image">
                 </div>
 
-                <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">Bryan A. Granados Percy</h6>
+                <h6 class="font-medium text-gray-600 text-base md:text-2xl uppercase mb-4 md:mb-6">
+                    Bryan A. Granados Percy
+                </h6>
 
-                <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">Developer Full-Stack Laravel</h1>
+                <h1 class="font-normal text-gray-900 text-xl md:text-4xl leading-tight mb-4 md:mb-6">
+                    Developer Full-Stack Laravel
+                </h1>
 
-                <p class="font-normal text-gray-600 text-md md:text-xl mb-16">
-                    Me apasiona el software y disfruto diseñando herramientas que hagan la vida de las personas más fácil. 
-                    Mi objetivo es crear soluciones prácticas y accesibles que tengan un impacto positivo.
-
+                <p class="font-normal text-gray-600 text-sm md:text-md mb-6">
+                    Me apasiona el software y disfruto diseñando herramientas que hagan la vida de las personas
+                    más fácil. Mi objetivo es crear soluciones prácticas y accesibles que tengan un impacto
+                    positivo.
                 </p>
 
-                <a href="{{ asset('documents/BryanPercyCV.pdf') }}" download="BryanPercyCV.pdf" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Contactame</a>
+                <!-- <a href="{{ asset('documents/BryanPercyCV.pdf') }}" download="BryanPercyCV.pdf"
+                    class="block w-full md:w-auto px-4 py-2 md:px-7 md:py-3 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm md:text-base rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">
+                    Contactame
+                </a> -->
 
             </div>
 
